@@ -1,0 +1,2 @@
+defmodule Natter do
+end
