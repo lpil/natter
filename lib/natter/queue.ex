@@ -6,6 +6,12 @@ defmodule Natter.Queue do
 
   @doc """
   Construct a new queue from the given list.
+
+      iex> new() |> inspect()
+      "#Natter.Queue<[]>"
+
+      iex> [1, 2] |> new() |> inspect()
+      "#Natter.Queue<[1, 2]>"
   """
   @spec new([any]) :: t
   def new(xs \\ []) when is_list(xs) do
